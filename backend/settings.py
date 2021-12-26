@@ -131,7 +131,6 @@ DATABASES = {
         # "HOST":"https://ufysrqzzfrcccnperzqc.supabase.co"
     }
 }
-DATABASES['default'] =  dj_database_url.config()
 
 # Supabase
 # DATABASES = {
@@ -233,3 +232,6 @@ DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 # Set DEBUG to false if in Heroku
 if os.getcwd()=='/app':
     DEBUG =False
+
+import dj_database_url
+DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
