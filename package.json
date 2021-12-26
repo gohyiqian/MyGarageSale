@@ -1,0 +1,19 @@
+{
+  "name": "garagesale",
+  "version": "1.0.0",
+  "description": "A full-stack responsive ecommerce marketplace built with React and Django. The application allows user to have an option to become seller and create their own shops. Users are able to create and add products to shops and is also able to shop for products. Django default Auth model are being extended to include the buyer and seller usertypes.",
+  "main": "index.js",
+  "scripts": {
+    "heroku-prebuild": "NODE_ENV=production cd client/ && npm install && npm run build && cd .."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gohyiqian/GarageSale.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gohyiqian/GarageSale/issues"
+  },
+  "homepage": "https://github.com/gohyiqian/GarageSale#readme"
+}
