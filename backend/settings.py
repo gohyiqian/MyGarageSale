@@ -14,6 +14,7 @@ from pathlib import Path
 from datetime import timedelta
 import environ
 import os
+import dj_database_url
 import psycopg2
 
 # Initialise environment variables
@@ -34,7 +35,7 @@ SECRET_KEY = env('SECRET_KEY')
 # set DEBUG to false before deployment
 DEBUG = False
 
-ALLOWED_HOSTS =['*']
+ALLOWED_HOSTS =['*',]
 # ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'mygaragesale.herokuapp.com/']
 
 
@@ -130,6 +131,7 @@ DATABASES = {
         # "HOST":"https://ufysrqzzfrcccnperzqc.supabase.co"
     }
 }
+DATABASES['default'] =  dj_database_url.config()
 
 # Supabase
 # DATABASES = {
