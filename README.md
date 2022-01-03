@@ -1,5 +1,7 @@
 # GarageSale
 
+Access Application [Here](https://mygaragesale.herokuapp.com/)
+
 A full-stack responsive ecommerce marketplace built with React and Django. The application allows user to have an option to become seller and create their own shops. Users are able to create and add products to shops and is also able to shop for products. Django default Auth model are being extended to include the buyer and seller usertypes.
 
 1. Customised caurosel on Homepage
